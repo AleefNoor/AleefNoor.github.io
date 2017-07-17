@@ -83,3 +83,11 @@ You know enough history about my first name. Now, let us get to know my last nam
    I also like to watch a movie or research something of my interest.
    </html>
  </body>
+
+ </head>
+ <body>
+   <h1> Fav Colors </h1>
+   <br><img src="color.png"> <img src="bright.jpg">
+   </html>
+ </body>
+ 
