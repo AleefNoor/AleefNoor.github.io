@@ -63,6 +63,7 @@ elif user_input == "continue":
     elif user_input == "leave":
         print("Oh well! You walk to class.") 
         print("After a long day, you start going home. On the way home, you drop into a manhole. You had to stay there for 3 hours until help came.")
+        print("When you finally reached home. You fell asleep without taking a shower because you were so tired! Then you start dreaming. A ferocious angel comes to")
 	
 
  
