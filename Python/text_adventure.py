@@ -63,7 +63,14 @@ elif user_input == "continue":
     elif user_input == "leave":
         print("Oh well! You walk to class.") 
         print("After a long day, you start going home. On the way home, you drop into a manhole. You had to stay there for 3 hours until help came.")
-        print("When you finally reached home. You fell asleep without taking a shower because you were so tired! Then you start dreaming. A ferocious angel comes to")
+        print("When you finally reached home. You fell asleep without taking a shower because you were so tired! Then you start dreaming. A ferocious angel appears in your dream It keeps on throwimg fireballs at you. ")
+        print(" The angel says 'This is your punishment for not caring about mother nature.'")
+        user_input=input("Will you take care of mother nature next time? 'yes' or 'no'?")
+        if user_input== "yes":
+            print("Good job!")
+        elif user_input== "no":
+            print("Karma will bite you!")
+
 	
 
  
