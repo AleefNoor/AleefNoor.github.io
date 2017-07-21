@@ -27,13 +27,13 @@ recolored = []
 
 for x in image_list:
 	intensity= x[0] + x[1] + x[2]
-	if intensity < 182:
+	if intensity <= 182:
 		recolored.append(darkBlue)
-	elif 180 < intensity < 364:
+	elif 180 <= intensity and intensity <= 364:
 		recolored.append(red)
-	elif 364 < intensity < 546:
+	elif 364 <= intensity and intensity <= 546:
 		recolored.append(lightBlue)
-	elif intensity > 546:
+	elif intensity >= 546:
 		recolored.append(yellow)
 
 
