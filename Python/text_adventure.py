@@ -43,7 +43,7 @@ if user_input == "pickup":
             print("This is good karma because you did the right thing for mother nature by telling the teacher to throw the can. Congrats")
         elif user_input == "clothes":
             print("When you go shopping for clothes, you see there is a sale going on. When you check out your extra cool 350 dollar dress, it's only 20 dollars!")
-            print("This is good karma because you did the right thing for mother nature by telling the teacher to throw the can. Congrats!")
+            print("This is good karma because you did the right thing for mother nature putting the plastic bag in the garbage can. Congrats!")
 
 
  
