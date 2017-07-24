@@ -5,102 +5,180 @@
     <title> Get To Know A Leaf </title>
 
     <style>
-      h1 {font-size: 30px}
-        h2 {font-size: 30px}  h3 {font-size: 30px}  h4 {font-size: 30px}  h5 {font-size: 30px}  h6 {font-size: 30px}
+body {font-family: "Lato", sans-serif;}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: dodgerblue;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+div.tab button:hover {
+    background-color: Crimson ;
+}
+.tabcontent {
+    display: none;
+    padding: 15px 35px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    border-top: none;
+}
+
+
         div#section1 {
           background-color: lightpink;
-          font-size: 27px
+          background-image: url("back1.jpg");
+           font-size: 27px;
+         }
+
+        div#section2 {
+          background-color: powderblue;
+          background-image: url("back3.jpg");
+         }
+        div#section3 {
+          background-color: plum;
+          background-image: url("back4.png");
+        }
+        div#section4 {
+          background-color: LightSalmon;
+           background-image: url("back5.jpg");
+        }
+        
+         div#section5 {
+          background-color: LightGreen;
+           background-image: url("back6.jpg");
         }
 
+        div#section6 {
+          background-color: yellow;
+          background-image: url("back7.png");
+         }
+         div#section7 {
+          background-color: Crimson;
+           background-image: url("back8.jpg");
+        }
+</style>
 
-    </style>
     </head>
+    <body>
 
-  <body>
-    <div id="section1" align="center">
-      <img  align= "left" src="me.jpg" width:"300" height="350" >
+    <div id="section1"  align="center">
+      <img  align= "left" src="me.jpg" width:"300" height="320" >
       <br><br><br>
-      <b><p> Hi, I am a leaf. <br> I am normal teenager born on September 8, 2001.<br> I still don't know why I was brought
+      <b><p1 style="color: dimgray;"> Hi, I am a leaf. <br> I am a normal teenager born on September 8, 2001.<br> I still don't know why I was brought
         into this world but I am figuring it out. <br> I am a muslim and have 4 family members whom I cherish.<br> This website
-        is designed to let you get to know me. <br> Please enjoy, and just a warning, I don't know what grammar is. </b> </p>
+        is designed to let you to get to know me. <br> Click on the tabs to navigate through my website, and just a warning, I don't know what grammar is.  Enjoy!!</b> <br>
+        </p1>
     </div>
-    <div>
-      <br> My actual name is Aleef Noor. My first name could mean a leaf but it also is the
-      <i><b>first letter of the arabic alphabet</i></b>.
-    </div>
+<br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'section2')">My Name</button>
+  <button class="tablinks" onclick="openCity(event, 'section3')" id="defaultOpen">Fav Foods</button>
+  <button class="tablinks" onclick="openCity(event, 'section4')">Hobbies</button>
+  <button class="tablinks" onclick="openCity(event, 'section5')">Pretty Colors</button>
+  <button class="tablinks" onclick="openCity(event, 'section6')">Family</button>
+  <button class="tablinks" onclick="openCity(event, 'section7')">Dreams</button>
+</div>
 
-    <div>
-      <br> You know enough history about my first name. Now, let us get to know my last name. <br> My last name is Noor. Noor means light.
+<div id="section2" class="tabcontent">
+    <b><h1 style="color: peachpuff;"> <br>All About Ma Name </h1></b>
+      <b><p style="font-size: 25px;color: white; "> My actual name is Aleef Noor. My first name could mean a leaf but it also is the 
+      <i><b>first letter of the arabic alphabet</i></b>.
+      You know enough history about my first name. Now, let us get to know my last name. <br> My last name is Noor. Noor means light.
       So, I like to think my name means <b><i> First Light. </i></b>
       <br>Since now you are familiar with my name, let us look at my interests.
-    </div>
-    <div>
-        <p><b> A leaf. Yes, I love this joke </b></p>
-    </div>
-  <img src= "leave-clipart.jpg">
+        <br><b> A leaf. Yes, I love this joke </b></p>
+  <img src= "leave-clipart.jpg" width="150" height="110"></p></b>
 </div>
 
 
 
-<div>
-<h3> Fav Foods </h3>
-</div>
-
-<div>
+<div id="section3" class="tabcontent" >
+<h1 style="color: Crimson;"> Fav Foods </h1>
 <img src= "hamburger.jpg" alt="juicy Hamburger" width="100"> <img src="pizza.jpg" width="100">
 <br><img src="pasta.jpg" width="100"> <img src="meatballs.jpg" width="100">
-</div>
-
-<div>
-  <br> As you can tell from the pictures above, <b> I LOVE JUNK FOOD.</B>
+  <br> <p3 style="font-size: 20px;color: maroon;"> As you can tell from the pictures above, <b> I LOVE JUNK FOOD.</B>
   <br>  However, I eat healthy everyday and consume junk food in limited amounts.
   <br>  I also <b> LOVE </b> sweets. In fact, I wouldn't mind to marry one.
-</div>
-
-<div>
 <br> <img src= "Gulab.jpg" width="100"> <img src="lado.jpg" width="100">
   <br><img src="choco.jpg" width="100"> <img src="ice.jpg" width="150">
+  <br> Just so you know, I love sweets <b>MORE</b> than junk food.</p3>
 </div>
 
-<div>
-  <br> Just so you know, I love sweets more than junk food.
-</div>
-
-<div>
-  <h4> Hobbies </h4>
-</div>
-
-<div>
-  <br><img src="family.jpg" width="300"> <img src="monkey.jpg" width="150">
-</div>
-
-<div>
-  <br> In my free time I love to do <b>nothing</b>. I just like to sit and stare into empty space.<br>
+<div id="section4" class="tabcontent">
+  <h1 style="color: indigo;"> Hobbies </h1>
+  <img src="family.jpg" width="300"> <img src="monkey.jpg" width="150">
+  <br>  <p1 style="font-size: 20px;color: midnightblue;" >  In my free time I love to do <b>nothing</b>. I just like to sit and stare into empty space.<br>
    However, if I want to do something, I like to <b>read a book</b> or <b>spend time with friends or family</b>.<br>
-   I also like to <b>watch a movie</b> or <b>research</b> something of my interest.
+   I also like to <b>watch a movie</b> or <b>research</b> something of my interest.</p1>
  </div>
 
-<div>
-  <h6> Fav Colors </h6>
-  <img src="color.png" width="150" height="100"> <img src="bright.jpg"width="150">
-  <br>I love pastel and bright colors. My most fav colors are <b> cotton candy pink</b> and <b> sky blue </b>
-  <br> I also like neon green.
+<div id="section5" class="tabcontent">
+  <b><h7 style="font-size: 200%; color: dodgerblue;">  Fav Colors </h7></b>
+  <br>
+  <br><img src="color.png" width="150" > <img src="bright.jpg" width="150" >
+  <br><p2 style="font-size: 25px; color: indigo;"> I love pastel and bright colors. My most fav colors are <b> cotton candy pink</b> and <b> sky blue. </b>
+  <br> I also like neon green.</p2>
 </div>
 
-<div>
-  <h5> My Family </h5>
-  <img src="mp.jpg" height="350" length="100"> <br>
-  My <b>SWEET MOM</b> and <b>AWESOME DAD</b><br>
-    <img src="bro.jpg" height="350" length="100"> <br>
-    My mean smart bro. I don't even know why god gave him brains. <br><b> HE DOESN'T DESERVE BRAINS</b>.
-    However, who am I to judge?
-  </div>
+<div class="slideshow-container">
+<div id="section6" class="tabcontent">
+ <h1 style="color: orangered;"> My Family </h1>
+     <div class="slides">
+      <div style="color: darkred;"> Washington DC </div>
+      <img src="5.jpg" height="350" length="100"> 
+    </div>
+     <div class="slides">
+      <div style="color: darkmagenta;"> George Island Park </div>
+      <img src="3.jpg" height="350" length="100"> 
+    </div>
+     <div class="slides">
+     <div style="color: Navy ;"> Ireland Airport </div>
+      <img src="7.jpg" height="350" length="100"> 
+    </div>
+    <div class="slides">
+    <div style="color: midnightblue;"> Kuwait Hotel </div>
+      <img src="6.jpg" height="350" length="100"> 
+    </div>
+    <p4 style="font-size: 20px;color: maroon">My <b>SWEET MOM</b> and <b>AWESOME DAD</b></p4>
+    <div class="bslides">
+     <br>
+    <img src="bro.jpg" height="350" length="100"> 
+    <div style="color: indigo;"> My 12th Birthday </div><br>
+    </div>
+    <div class="bslides">
+    <br>
+    <img src=" bro2.JPG" height="350"><br>
+     <div style="color: blue;"> My bro winning an award meant for <b>SUPER</b> smart students in Oman. </div><br>
+    </div>
+    <p4 style="font-size: 20px;color: maroon"> My mean smart bro. I don't even know why god gave him brains. <br><b> HE DOESN'T DESERVE BRAINS</b>.
+    However, who am I to judge?</p4>
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        </div>
 
-<div>
-  <h6> Dreams and Career Path </h6>
-  <img src="m2.jpg" height="150"><img src="f.jpg"height="150" width="100"><br>
+        <div style="text-align:center"> 
+        <span class="pot"></span> 
+        <span class="pot"></span>  
+        </div>
+</div>
+
+<div id="section7" class="tabcontent">
+  <h1 style="color: slateblue;"> Dreams and Career Path </h1>
+  <img src="m2.jpg" height="150"> <img src="f.jpg" height="150" width="100"><br>
   <img src="mm.jpg" height="200" > <br>
-  My dream is to <b> walk down on Manhattan looking like a strong, fashionable, wealthy, and independent woman. </b><br>
+  <p2 style="font-size: 20px;color: darkblue;">My dream is to <b> walk down on Manhattan looking like a strong, fashionable, wealthy, and independent woman. </b><br>
   I used to be interested in writing so, I am enrolled in a writing program at my high school. <br>
   However, recently I found out I don't like to write because it's too much work. I am passionate <br>
   about short poems or stories, but I am not ready to write novels. Before going into writing, I had an <br>
@@ -110,5 +188,70 @@
   loved the praise I got from it. In high school, during sophomore year, we did Shakespeare plays. These plays <br>
   helped me realize how passionate I was about acting. Due to this, I enrolled for college now drama classes at Queens<br>
   college. I can't wait to get started. So far, I am set on doing a major at computer science and minor in acting. <br>
-  I know it will be a challenge, but I am willing to do anything to accomplish my dream.
+  I know it will be a challenge, but I am willing to do anything to accomplish my dream. </p2>
 </div>
+
+</html>
+</body>
+<script>
+var slidesIndex = 0;
+showslides1();
+
+function showslides1() {
+    var i;
+    var slides1 = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides1.length; i++) {
+       slides1[i].style.display = "none";  
+    }
+    slidesIndex++;
+    if (slidesIndex> slides1.length) {slidesIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides1[slidesIndex-1].style.display = "block";  
+    dots[slidesIndex-1].className += " active";
+    setTimeout(showslides1, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("bslides");
+    var pots = document.getElementsByClassName("pot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < pots.length; i++) {
+        pots[i].className = pots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    pots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
