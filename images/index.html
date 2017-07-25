@@ -3,6 +3,7 @@
 <html>
   <head>
     <title> Get To Know A Leaf </title>
+ <!--    <script type="text/javascript" src="some.js"></script> -->
 
     <style>
 body {font-family: "Lato", sans-serif;}
@@ -65,6 +66,31 @@ div.tab button:hover {
           background-color: Crimson;
            background-image: url("back8.jpg");
         }
+        div#section8{
+          background-color: Crimson;
+           background-image: url("back2.jpg");}
+            
+          .slideshow-container2 {
+          position: relative;
+            margin: auto;}
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: indigo;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;}
+            .next {
+            right: 860px;
+            border-radius: 3px 0 0;}
+          }
+
+         
 </style>
 
     </head>
@@ -86,6 +112,7 @@ div.tab button:hover {
   <button class="tablinks" onclick="openCity(event, 'section5')">Pretty Colors</button>
   <button class="tablinks" onclick="openCity(event, 'section6')">Family</button>
   <button class="tablinks" onclick="openCity(event, 'section7')">Dreams</button>
+  <button class="tablinks" onclick="openCity(event, 'section8')">GWC Projects</button>
 </div>
 
 <div id="section2" class="tabcontent">
@@ -191,8 +218,48 @@ div.tab button:hover {
   I know it will be a challenge, but I am willing to do anything to accomplish my dream. </p2>
 </div>
 
+<div class="slideshow-container2">
+  <div id="section8" class="tabcontent">
+  <h1 style="color: darkblue;"> My Girls Who Code Projects <h1>
+
+  <div class="gslides fade">
+   <img src="s1.PNG" height="350" length="100"> 
+   <p style="color: darkred; font-size: 20px"> This is a "Get to Know Me" scratch project. Here is the link: <a href="https://scratch.mit.edu/projects/168507145"; style="color: dodgerblue;"> https://scratch.mit.edu/projects/168507145/  </p> </a>
+   </div>
+
+   <div class="gslides fade">
+   <img src="s2.PNG" height="350" length="100"> 
+   <p style="color: darkred; font-size: 20px"> This is a "Paddle Ball Game" scratch project. Here is the link: <a href="https://scratch.mit.edu/projects/168597089/"; style="color: dodgerblue;"> https://scratch.mit.edu/projects/168597089/ </p> </a>
+   </div>
+
+   <div class="gslides fade">
+   <img src="s3.PNG" height="350" length="100">
+   <br> 
+   <p1 style="color: darkred; font-size: 20px"> This is another scratch game project. Here is the link: <a href="https://scratch.mit.edu/projects/168678289/"; style="color: dodgerblue;"> https://scratch.mit.edu/projects/168678289/ </p1></a>
+   </div>
+
+   <div class="gslides fade">
+   <img src="g1.PNG" height="250" width="480" >
+   <br>
+   <p style="color:darkred; font-size: 20px"> These are some python projects. Here is the link: <a href="https://github.com/AleefNoor/AleefNoor.github.io/tree/master/Python"; style="color: dodgerblue;"> https://github.com/AleefNoor/AleefNoor.github.io/tree/master/Python </p> </a>
+   </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+   <div style="text-align:center">
+  <span class="got" onclick="currentSlide(1)"></span> 
+  <span class="got" onclick="currentSlide(2)"></span> 
+  <span class="got" onclick="currentSlide(3)"></span> 
+  <span class="got" onclick="currentSlide(4)"></span> 
+    </div> 
+  </div>
+
+
 </html>
 </body>
+
 <script>
 var slidesIndex = 0;
 showslides1();
@@ -214,6 +281,36 @@ function showslides1() {
     setTimeout(showslides1, 2000); // Change image every 2 seconds
 }
 </script>
+
+<script>
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("gslides");
+  var gots = document.getElementsByClassName("got");
+  if (n > slides2.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";  
+  }
+  for (i = 0; i < gots.length; i++) {
+      gots[i].className = gots[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  gots[slideIndex2-1].className += " active";
+}
+</script>
+
 
 <script>
 var slideIndex = 0;
