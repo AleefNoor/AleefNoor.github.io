@@ -26,6 +26,7 @@ function addEntryToBlog() {
 function createBlogEntryElement(blogEntry) {
 	var bloggerblog = blogEntry.blogtext;
 	Newdivs= document.createElement('div');
+	Newdivs.classname= "blogentry"
 	Newdivs.innerHTML = bloggerblog;
 	blogDetails.appendChild(Newdivs);
 
@@ -34,6 +35,7 @@ function createBlogEntryElement(blogEntry) {
 function createFooterElement(blogEntry) {
 	var bloggername= blogEntry.name
 	Newdivs= document.createElement('div');
-	Newdivs.innerHTML = bloggername;
+	Newdivs.className= "blogDate";
+	Newdivs.innerHTML = "by " + bloggername + " on " + Date();
 	blogDetails.appendChild(Newdivs);
 }
