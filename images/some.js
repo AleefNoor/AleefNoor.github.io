@@ -99,3 +99,20 @@ function openCity2(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen2").click();
+
+function opentab(evt, cityName) {
+    var i, tabs, tablinks3
+    tabs = document.getElementsByClassName("tabs");
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
+    tablinks3 = document.getElementsByClassName("tablinks3");
+    for (i = 0; i < tablinks3.length; i++) {
+        tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen3").click();
