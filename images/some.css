@@ -2,7 +2,10 @@ body {font-family: "Lato", sans-serif;}
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: dodgerblue;
+    background-color: #880044;
+    position: fixed;
+    top: 0;
+    width: 90.7%
 }
 
 div.tab button {
@@ -27,7 +30,9 @@ div.tab button:hover {
 
 
         div#intro {
-        background-color: darkgray;
+        background-color: #FF6BB2;
+        height: 580px;
+        width:  90.7%;
 
         }
         div#section1 {
