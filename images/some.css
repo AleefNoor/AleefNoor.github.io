@@ -1,11 +1,12 @@
 body {font-family: "Lato", sans-serif;}
+
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #880044;
+    background-color: #E2CFEA;
     position: fixed;
     top: 0;
-    width: 90.7%
+    width: 89.59%
 }
 
 div.tab button {
@@ -20,17 +21,16 @@ div.tab button {
 div.tab button:hover {
     background-color: Crimson ;
 }
+
 .tabcontent {
     display: none;
-    padding: 15px 35px;
-    border: 1px solid #ccc;
     font-size: 20px;
     border-top: none;
 }
 
 
         div#intro {
-        background-color: #FF6BB2;
+        background-color: #7E78D2;
         height: 580px;
         width:  90.7%;
 
