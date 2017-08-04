@@ -4,9 +4,7 @@ div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #E2CFEA;
-    position: fixed;
-    top: 0;
-    width: 89.59%
+    width: 91%
 }
 
 div.tab button {
@@ -28,6 +26,73 @@ div.tab button:hover {
     border-top: none;
 }
 
+div.tab2 {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #E15554;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+div.tab2 button {
+    display: block;
+    background-color: #E15554;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab2 button:hover {
+    background-color: #EF6F6C;
+}
+
+/* Create an active/current "tab button" class */
+div.tab2 button.active {
+    background-color: #990D35;
+}
+
+/* Style the tab content */
+.tabcontent1 {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 58.8%;
+    max-height: 1000px;
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EF6F6C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
         div#intro {
         background-color: #7E78D2;
@@ -39,41 +104,48 @@ div.tab button:hover {
           background-color: lightpink;
           background-image: url("back1.jpg");
            font-size: 27px;
+             width:  90.7%;
          }
 
-        div#section2 {
+        div#section25 {
           background-color: powderblue;
-          background-image: url("back3.jpg");
+          background-image: url("back3.jpg"); 
+         
+
          }
         div#section3 {
           background-color: plum;
           background-image: url("back4.png");
+         
         }
         div#section4 {
           background-color: LightSalmon;
            background-image: url("back5.jpg");
+        
         }
         
          div#section5 {
           background-color: LightGreen;
            background-image: url("back6.jpg");
+           width:  90.7%
         }
 
         div#section6 {
           background-color: yellow;
           background-image: url("back7.png");
+          
          }
          div#section7 {
           background-color: Crimson;
            background-image: url("back8.jpg");
+           width:  90.7%
         }
         div#section8{
           background-color: Crimson;
-           background-image: url("back2.jpg");}
+           background-image: url("back2.jpg");
+          width:  90.7%;}
             
-          .slideshow-container2 {
-          position: relative;
-            margin: auto;}
+      
           .prev, .next {
             cursor: pointer;
             position: absolute;
