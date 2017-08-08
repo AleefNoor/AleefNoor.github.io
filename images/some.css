@@ -3,7 +3,7 @@ body {font-family: "Lato", sans-serif;}
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #E2CFEA;
+    background-color: #FB5607;
     width: 91%
 }
 
@@ -17,7 +17,7 @@ div.tab button {
     transition: 0.3s;
 }
 div.tab button:hover {
-    background-color: Crimson ;
+    background-color:  #E9CE2C;
 }
 
 .tabcontent {
@@ -29,7 +29,7 @@ div.tab button:hover {
 div.tab2 {
     float: left;
     border: 1px solid #ccc;
-    background-color: #E15554;
+    background-color: #1B998B;
     width: 30%;
     height: 300px;
 }
@@ -37,7 +37,7 @@ div.tab2 {
 /* Style the buttons inside the tab */
 div.tab2 button {
     display: block;
-    background-color: #E15554;
+    background-color: #1B998B;
     color: black;
     padding: 22px 16px;
     width: 100%;
@@ -51,12 +51,12 @@ div.tab2 button {
 
 /* Change background color of buttons on hover */
 div.tab2 button:hover {
-    background-color: #EF6F6C;
+    background-color: #C20114;
 }
 
 /* Create an active/current "tab button" class */
 div.tab2 button.active {
-    background-color: #990D35;
+    background-color: #C20114;
 }
 
 /* Style the tab content */
@@ -74,7 +74,7 @@ div.tab2 button.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #EF6F6C;
+    background-color: #3F88C5;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -87,7 +87,7 @@ div.tab2 button.active {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #003049}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -95,7 +95,7 @@ div.tab2 button.active {
 
 
         div#intro {
-        background-color: #7E78D2;
+        background-color: #FF006E;
         height: 580px;
         width:  90.7%;
 
@@ -109,7 +109,7 @@ div.tab2 button.active {
 
         div#section25 {
           background-color: powderblue;
-          background-image: url("back3.jpg"); 
+          background-image: url("back3.png"); 
          
 
          }
