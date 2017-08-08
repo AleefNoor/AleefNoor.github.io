@@ -1,9 +1,10 @@
-body {font-family: "Lato", sans-serif;}
-
+body {font-family: "Lato", sans-serif;
+      background-color: #3F88C5;
+      background-image: url(body.jpg);}
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #FB5607;
+    background-color: #FF7AC5;
     width: 91%
 }
 
@@ -17,7 +18,7 @@ div.tab button {
     transition: 0.3s;
 }
 div.tab button:hover {
-    background-color:  #F77F00;
+    background-color:  #A6B1E1;
 }
 
 .tabcontent {
@@ -29,7 +30,7 @@ div.tab button:hover {
 div.tab2 {
     float: left;
     border: 1px solid #ccc;
-    background-color: #1B998B;
+    background-color: #6E44FF;
     width: 30%;
     height: 300px;
 }
@@ -37,7 +38,7 @@ div.tab2 {
 /* Style the buttons inside the tab */
 div.tab2 button {
     display: block;
-    background-color: #1B998B;
+    background-color: #6E44FF;
     color: black;
     padding: 22px 16px;
     width: 100%;
@@ -51,12 +52,12 @@ div.tab2 button {
 
 /* Change background color of buttons on hover */
 div.tab2 button:hover {
-    background-color: #C20114;
+    background-color: #430FFF;
 }
 
 /* Create an active/current "tab button" class */
 div.tab2 button.active {
-    background-color: #C20114;
+    background-color: #100B56;
 }
 
 /* Style the tab content */
@@ -92,7 +93,6 @@ div.tab2 button.active {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
         div#intro {
         background-color: #FF006E;
