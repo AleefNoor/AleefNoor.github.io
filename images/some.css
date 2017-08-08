@@ -17,7 +17,7 @@ div.tab button {
     transition: 0.3s;
 }
 div.tab button:hover {
-    background-color:  #E9CE2C;
+    background-color:  #F77F00;
 }
 
 .tabcontent {
