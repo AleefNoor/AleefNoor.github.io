@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1> List Of Magival Numbers </h1>
+	<div id=array></div>
+	<br>
+	<input id="element" placeholder="Choose a number"></input>
+	<button id="btn" onclick="getindex()">Search for the number</button>
+
+	<div id="answer"></div>
+
+	<script type="text/javascript">
+		var numbers = [10,20,30,40,50,60,70,80,90,100]
+		document.getElementById('array').innerHTML= numbers
+	function getindex() {
+		var element = document.getElementById('element').value
+		var firstindex= 0
+		var lenghtofno= numbers.length-1
+		var index
+		var number
+
+		while (firstindex <= lenghtofno)
+		{
+			index = (firstindex + lenghtofno)/2|0
+			number= numbers[index]
+			console.log(index)
+
+			if (number == element){
+				document.getElementById('answer').innerHTML= index
+				break;
+			}
+
+			if (number < element){
+				firstindex = index + 1
+			}
+
+			if (number > element){
+				lenghtofno = index - 1
+			}
+
+			else {
+				document.getElementById('answer').innerHTML= "This number doesn't exist in the array"
+			}
+		}
+	}
+</script>
+
+</body>
+
+</html>
