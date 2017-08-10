@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+
+<style>
+
+body{
+
+	background-color: gray;
+}
+	.task{
+		background-color: darkgray;
+		font-size: 25px;
+		color: maroon;
+		max-width: 200px;
+	}
+
+</style>
 </head>
 <body>
 
 <h1> To Do List</h1>
 	<div id=array></div>
 	<br>
-	<input id="element" placeholder="Enter your task"></input>
-	<button id="btn" onclick="add()">Add</button>
+	<input id="element"  placeholder="Enter your task"></input>
+	<button id = "btn" onclick="add()">Add</button>
+	<button id="btn1" onclick="Delete()">Delete Entry</button>
 
 	<div id="answer"></div>
 </body>
 </html>
 <script type="text/javascript">
+
 function add() {
-	var userinput= document.getElementById("element").value
-	Newdivs= document.createElement('div');
+	var userinput= document.getElementById("element").value;
+	var Newdivs= document.createElement('div');
+	Newdivs.className = "task";
 	Newdivs.innerHTML = userinput;
+	var input= document.createElement('input');
+	input.type= 'checkbox';
+	input.className="box";
+	Newdivs.appendChild(input);
 	answer.appendChild(Newdivs);
+    document.getElementById("element").value = "";
 	}
+function Delete() {
+	var taskz= document.getElementsByClassName("task");
+	var boxz= document.getElementsByClassName("box");
+	
+ for (var i = 0; i < boxz.length; i++) {
+ 	var el= taskz[i];
+ 	var eb= boxz[i];
+ 	if(eb.checked){
+ 		eb.remove();
+ 		el.remove();
+ 		i--
+ 	}
+ }
+	for (var i = 0; i < taskz.length; i++) {
+ 	var el= taskz[i];
+ 	var eb= boxz[i];
+ 	if(eb.checked){
+ 		eb.remove();
+ 		el.remove();
+ 	}
+ }
+
+}
+
 </script>
