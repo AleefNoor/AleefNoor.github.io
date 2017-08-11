@@ -6,30 +6,30 @@
 
 body{
 
-	background-color: gray;
+	background-color: #A30B37;
 }
 	.task{
-		background-color: darkgray;
+		background-color: #A30B37;
 		font-size: 25px;
-		color: maroon;
-		max-width: 200px;
 	}
 
 </style>
 </head>
-<body>
+<body align="center">
 
 <h1> To Do List</h1>
 	<div id=array></div>
 	<br>
 	<input id="element"  placeholder="Enter your task"></input>
-	<button id = "btn" onclick="add()">Add</button>
-	<button id="btn1" onclick="Delete()">Delete Entry</button>
+	<button id = "btn" onclick="addTodo()">Add</button>
 
 	<div id="answer"></div>
 </body>
 </html>
-<script type="text/javascript">
+
+<script src= "app_skeleton.js"></script>
+<script src= "db.js"></script>
+<!-- <script type="text/javascript">
 
 function add() {
 	var userinput= document.getElementById("element").value;
@@ -53,7 +53,7 @@ function Delete() {
  	if(eb.checked){
  		eb.remove();
  		el.remove();
- 		i--
+ 		i
  	}
  }
 	for (var i = 0; i < taskz.length; i++) {
@@ -67,4 +67,4 @@ function Delete() {
 
 }
 
-</script>
+</script> -->
