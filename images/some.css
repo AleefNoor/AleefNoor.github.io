@@ -1,16 +1,18 @@
 body {font-family: "Lato", sans-serif;
-      background-color: #3F88C5;
-      background-image: url(body.jpg);}
+      background-color: #453643;
+  }
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #FF7AC5;
-    width: 91%
+    width: 900px;
+    margin: auto;
+    left: 300px;
 }
 
 div.tab button {
     background-color: inherit;
-    float: left;
+    float: right;
     border: none;
     outline: none;
     cursor: pointer;
@@ -25,6 +27,7 @@ div.tab button:hover {
     display: none;
     font-size: 20px;
     border-top: none;
+    margin: auto;
 }
 
 div.tab2 {
@@ -95,7 +98,6 @@ div.tab2 button.active {
 }
 
         div#intro {
-        background-color: #FF006E;
         height: 580px;
         width:  90.7%;
 
